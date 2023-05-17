@@ -3,9 +3,11 @@
     max-width: 1199px;
     margin: 0 auto;
     position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
- /* otziv start  */
+ /* otziv start ----------------------------------------------- */
 .otziv{
     min-height: 430px;
     background: url(../image/Bg2.png);
@@ -19,7 +21,7 @@
     padding-top: 98px;
 
 }
-.vpechatleniya h1{
+.vpechatleniya h2{
     width: 588px;
     height: 87px;
     font-family: 'Montserrat';
@@ -83,9 +85,12 @@
     flex-direction: row;
 }
 
-/* otziv end */
+/* otziv end ------------------------------------------------------------------------*/
 
-/* article start */
+
+
+/* article start ----------------------------------------------------------------*/
+
 .articles{
     min-height: 1011px;
     display: flex;
@@ -95,31 +100,122 @@
 
     display: grid ;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+    width: 1200px;
+    height: 664px;
 }
 .gridaart img{
     border-radius: 10px;
-
-}
+} 
 .first1{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
+.first1{
+    background-image: url('../image/rasgrus.png');
+    background-size: cover;
+    width: 790px;
+    height: 355px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    padding: 40px; 
+    border-radius: 10px;
+    
 
+}
+/* .first1:hover {
+    transform: scale(1.01); 
+    transition: 0.5s;
+} */
 .first2{
     grid-column: 3 / 4;
     grid-row: 1 /3;
 }
+.first2{
+    background-image: url('/image/ctodet.png');
+    background-size: cover;
+    width: 380px;
+    height: 664px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    padding: 40px; 
+    overflow: hidden;
+    word-wrap: break-word;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+/* .first2:hover {
+    transform: scale(1.01); 
+    transition: 0.5s;
+} */
 .first3{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
+.first3{
+    background-image: url('/image/rasgrus.png');
+    background-size: cover;
+    width: 380px;
+    height: 279px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    padding: 40px; 
+    overflow: hidden;
+    word-wrap: break-word;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+/* .first3:hover {
+    transform: scale(1.01); 
+    transition: 0.5s;
+} */
 .first4{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
-.styletex h1{
+.first4{
+    background-image: url('/image/gotovim.png');
+    background-size: cover;
+    width: 380px;
+    height: 279px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    padding: 40px; 
+    overflow: hidden;
+    word-wrap: break-word;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+/* .first4:hover {
+    transform: scale(1.01); 
+    transition: 0.5s;
+} */
+.gridaart h3{
+    width: 88px;
+    height: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155.4%;
+    color: #FFFFFF;
+}
+.gridaart h4{
+    width: 436px;
+    height: 37px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 155.4%;
+    color: #FFFFFF;
+}
+.styletex h2{
     margin-bottom: 24px;
     width: 588px;
     height: 41px;
@@ -131,11 +227,11 @@
     line-height: 121.9%;
     color: #2F2F2F;
 }
+
 .tipoallstatii{
     width: 127px;
     float: right;
     margin-top: 25px;
-    
 }
 .tipoallstatii a{
     width: 106px;
@@ -150,17 +246,23 @@
     text-decoration: none;
 }
 
-/* article end */
+/* article end --------------------------------------------------------------------------*/
 
 
-/* footer start */
-.feedback{
-    background: url(../image/Bg.png);
-    min-height: 986px;
+/* footer start ------------------------------------------------------------------------*/
+.footer{
+    background: url(/image/Bg.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.foterbg h1{
+.foterbg{
+    padding-top: 98px;
+    padding-bottom: 101px;
+    width:  551px;
+    height: 516px;
+    
+}
+.foterbg h2{
     margin-bottom: 17px;
     width: 550px;
     height: 112px;
@@ -173,7 +275,7 @@
     color: #FFFFFF;
 
 }
-.foterbg h2{
+.foterbg h3{
     margin-bottom: 27px;
     width: 526px;
     height: 55px;
@@ -184,10 +286,7 @@
     line-height: 155.4%;
     color: #FFFFFF;
 }
-.foterbg{
-    padding-top: 98px;
 
-}
 .foterbg input{
     display: flex;
     flex-direction: row;
@@ -212,6 +311,46 @@
     color: #FFFFFF;
 }
 
-/* footer end */
+/* footer end ------------------------------------------------------------------------*/
 
+/* модальное окно -----------------------------------------------------*/
+/* CSS-стили для модального окна */
+.modal {
+    display: none; /* скрыть модальное окно по умолчанию */
+    position: fixed; /* позиционирование по экрану */
+    z-index: 9999; /* установить наивысший уровень z-index */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* добавить полосы прокрутки, если содержимое окна больше экрана */
+    background-color: rgba(0, 0, 0, 0.5); /* затемнить фон */
+  }
+  
+  .modal-content {
+    background-color: #fefefe; /* белый фон для содержимого окна */
+    margin: 15% auto; /* расположение окна по вертикали и горизонтали */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 500px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
+  /* модальное окно -----------------------------------------------------*/
