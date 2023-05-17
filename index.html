@@ -7,7 +7,7 @@
     <title>FoodLike</title>
     <link defer rel="stylesheet" href="css/style.css">
     <link defer rel="stylesheet" href="css/yakovstyle.css">
-    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="../JS/script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
@@ -92,9 +92,24 @@
         <section class="section7 section">семь</section>
 
 
+        <!-- как сделать заказ -->
+        <section class="section">
+            <div class="container">
+                <div class="howzahaz">
+                    <h2>Как сделать заказ</h2>  
+                </div>
+            </div>
 
-        <section class="section8 section">восемь</section>
-        <section class="section9 section">девять</section>
+        </section>
+        <!-- как сделать заказ -->
+
+        <!-- блок отзывов -->
+        <section class="section">
+            <div class="container">
+                
+            </div>
+        </section>       
+        <!-- блок отзывов -->
         
 
         <!-- otziv start  -->
@@ -105,9 +120,31 @@
                         <img src="image/zapiatie.png" alt="">
                 </div>
                 <div class="vpechatleniya">                  
-                        <h1>Хотите поделиться своим впечатлением?</h1>
+                        <h2>Хотите поделиться своим впечатлением?</h2>
                         <p>Мы всегда учитываем мнения наших покупателей. Если у вас есть пожелания или предложения, пожалуйста, напишите нам о них!</p>
-                        <button class="otzivbtn"><a href="">Оставить отзыв</a></button>
+                        <!-- <button class="otzivbtn"><a href="">Оставить отзыв</a></button> -->
+                        <!-- ------- -->
+                        <button id="open-modal">Оставить отзыв</button>
+
+                        <div id="modal" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form>
+                              <label for="name">Имя:</label>
+                              <input type="text" id="name" name="name" required>
+                        
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" name="email" required>
+                        
+                              <label for="review">Отзыв:</label>
+                              <textarea id="review" name="review" required></textarea>
+                        
+                              <button type="submit">Отправить</button>
+                            </form>
+                          </div>
+                        </div>
+                        
+                        <!-- ------- -->
                 </div>
                 </div>
             </div>
@@ -118,19 +155,23 @@
         <section class="articles"> 
             <div class="container">                  
                 <div class="styletex">
-                    <h1>Интересные статьи</h1>
+                    <h2>Интересные статьи</h2>
                 <div class="gridaart"> 
-                    <div class="first1">
-                        <img src="/image/Rectangle 48.png" alt="">
+                    <div class="first1">                       
+                        <h3>22.04.2020</h3>
+                        <h4>Разгружаемся после праздников</h4>       
                     </div>
                     <div class="first2">
-                        <img src="/image/Rectangle 50.png" alt="">
+                        <h3>22.04.2020</h3>
+                        <h4>Что такое детокс? <br> Очищаем организм</h4>  
                     </div>
                     <div class="first3">
-                        <img src="/image/Rectangle 52.png" alt="">
+                        <h3>22.04.2020</h3>
+                        <h4>Еда, которая <br> заставляет грустить</h4>  
                     </div>
                     <div class="first4">
-                        <img src="/image/Rectangle 51.png" alt="">
+                        <h3>22.04.2020</h3>
+                        <h4>Готовим обеды для <br> офиса</h4>  
                     </div>
                 </div>
                 <div class="tipoallstatii">
@@ -141,12 +182,18 @@
         </section>
         <!-- article end -->
 
+
+    </main>
+
+
+    <!-- footer start -->
+    <footer class="footer"> 
         <!-- feedback start -->
         <section class="feedback">
             <div class="container">
                 <div class="foterbg">
-                    <h1>Расчитать стоимость обеда</h1>
-                    <h2>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</h2>
+                    <h2>Расчитать стоимость обеда</h2>
+                    <h3>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</h3>
                     <form action="#">
 
                         <input type="button" class="btnfoot" value="Рассчитать">
@@ -155,12 +202,8 @@
             </div>
         </section>
         <!-- feedback end -->
-    </main>
 
-
-    <!-- footer start -->
-    <footer class="footer"> 
-
+<!--         
         <section class="navigation">            
             <div class="container">
                     <div class="navigation-links">
@@ -212,7 +255,7 @@
                 <p>&copy; 2020 Universe, Все права защищены</p>
                 <img src="image/logo.svg" alt="логотип">
             </div>
-        </section>
+        </section> -->
 
     </footer>
     <!-- footer end -->
@@ -245,6 +288,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- --- -->
-
+    <script src="JS/script.js"></script>
 </body>
 </html>
