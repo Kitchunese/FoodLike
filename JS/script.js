@@ -4,37 +4,8 @@ $('.multiple-items').slick({
     slidesToScroll: 3
   }); 
 
-// // JavaScript-код для модального окна
-
-// // Получаем кнопку "Оставить отзыв"
-// var openModalBtn = document.getElementById("openModal");
-
-// // Получаем модальное окно
-// var modal = document.getElementById("modal");
-
-// // Получаем кнопку для закрытия модального окна
-// var closeBtn = document.getElementsByClassName("close")[0];
-
-// // При клике на кнопку "Оставить отзыв" открываем модальное окно
-// openModalBtn.onclick = function() {
-//   modal.style.display = "block";
-// };
-
-// // При клике на кнопку "Закрыть" закрываем модальное окно
-// closeBtn.onclick = function() {
-//   modal.style.display = "none";
-// };
-
-// // При клике вне модального окна закрываем его
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
-
-
 // получаем кнопку и модальное окно
-var btn = document.getElementById("reviewBtn");
+var btn = document.getElementById("open-modal");
 var modal = document.getElementById("modal");
 
 // получаем элементы формы

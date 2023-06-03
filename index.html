@@ -93,20 +93,78 @@
 
 
         <!-- как сделать заказ -->
-        <section class="section">
+        <section class="zakaz">
             <div class="container">
+                <div class="allzakaz">
+                <h2>Как сделать заказ</h2> 
                 <div class="howzahaz">
-                    <h2>Как сделать заказ</h2>  
+                    <div class="card">
+                        <img src="/image/Ikon.svg" alt="заказ">
+                        <h4>Заказ</h4>
+                        <p>Перейдите в "Меню" и выберите предпочитаемые блюда и затем заполните форму заявки и ожидайте звонка менеджера</p>
+                        <a href="#">Подробнее ></a>
+                      </div>
+
+                      <div class="card">
+                        <img src="/image/businesscard.svg" alt="оплата">
+                        <h4>Оплата</h4>
+                        <p>Мы принимаем любой удобный для вас способ оплаты: картой банка, наличными, электронным платежом</p>
+                        <a href="#">Подробнее ></a>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="/image/Vector.svg" alt="доставка">
+                        <h4>Доставка</h4>
+                        <p>Производится каждый день
+                            по Москве с 8:00 до 20:00. Сумма минимального заказа составляет 800 рублей</p>
+                            <a href="#">Подробнее ></a>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="/image/tarelka.svg" alt="упаковка">
+                        <h4>Упаковка</h4>
+                        <p>Блюда доставляютсяв одноразовой пластиковой посуде в охлажденном виде (необходимо подогревв микроволновой печи)</p>
+                        <a href="#">Подробнее ></a>
+                      </div>                      
+                    </div>
                 </div>
             </div>
-
         </section>
         <!-- как сделать заказ -->
 
         <!-- блок отзывов -->
-        <section class="section">
+        <section class="otzisvs">
             <div class="container">
-                
+                <div class="leftotziv">
+
+                    <div class="textnashim">
+
+                        <h3>Нашим клиентам нравится то, что мы делаем</h3>
+                        <h4>Для нас важно любое ваше мнение!</h4>
+                        <a href="#">Все отзывы ></a>
+
+                    </div>
+
+                    <div class="cardsotziv">
+                      <div class="firscard">
+                        <img src="/image/Ellipse 15.png" alt="Премиум Кофе Солюшнз">
+                        <p>Качественные, всегда свежие продукты, оперативная доставка, вежливый, исполнительный курьер, работает просто фантастически</p>
+                        <b>Премиум Кофе Солюшнз</b>
+                      </div>
+                      <div class="firscard">
+                        <img src="/image/Ellipse 16.png" alt="БайтЭрг - Мария">
+                        <p>Сегодня попробовали первый раз Ваши обеды. Все очень вкусно! Будем продолжать) Спасибо!</p>
+                        <b>БайтЭрг - Мария</b>
+                      </div>
+                      <div class="firscard">
+                        <img src="/image/Ellipse 17.png" alt="Ирина Леонтьева">
+                        <p> Заказали заранее за 3 дня. обеды на 9 человек. Оператор накануне связалась и уточнила детали. Обеды всем понравились!</p>
+                        <b>Ирина Леонтьева</b>
+                      </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>       
         <!-- блок отзывов -->
@@ -122,34 +180,33 @@
                 <div class="vpechatleniya">                  
                         <h2>Хотите поделиться своим впечатлением?</h2>
                         <p>Мы всегда учитываем мнения наших покупателей. Если у вас есть пожелания или предложения, пожалуйста, напишите нам о них!</p>
-                        <!-- <button class="otzivbtn"><a href="">Оставить отзыв</a></button> -->
-                        <!-- ------- -->
-                        <button id="open-modal">Оставить отзыв</button>
+
+                        <button id="open-modal" class="btnmodal">Оставить отзыв</button>
 
                         <div id="modal" class="modal">
                           <div class="modal-content">
                             <span class="close">&times;</span>
+                            <h5>Оставить свой отзыв</h5>
                             <form>
                               <label for="name">Имя:</label>
-                              <input type="text" id="name" name="name" required>
+                              <input type="text" id="name" name="name" required placeholder="Андрей Васильевич">
                         
                               <label for="email">Email:</label>
-                              <input type="email" id="email" name="email" required>
+                              <input type="email" id="email" name="email" required placeholder="andrey@90gmail.ru">
                         
                               <label for="review">Отзыв:</label>
-                              <textarea id="review" name="review" required></textarea>
+                              <textarea id="review" name="review" class="review" required placeholder="Поделитесь своими впечатлениями"></textarea>
                         
-                              <button type="submit">Отправить</button>
+                              <button type="submit" class="btnwinmod">Отправить</button>
                             </form>
                           </div>
-                        </div>
-                        
-                        <!-- ------- -->
-                </div>
+                        </div>   
+                    </div>
                 </div>
             </div>
         </section>
         <!-- otziv end -->
+
 
         <!-- article start -->
         <section class="articles"> 
@@ -157,20 +214,20 @@
                 <div class="styletex">
                     <h2>Интересные статьи</h2>
                 <div class="gridaart"> 
-                    <div class="first1">                       
-                        <h3>22.04.2020</h3>
+                    <div tabindex="0" class="first first1">                       
+                        <p>22.04.2020</p>
                         <h4>Разгружаемся после праздников</h4>       
                     </div>
-                    <div class="first2">
-                        <h3>22.04.2020</h3>
+                    <div tabindex="0" class="first first2">
+                        <p>22.04.2020</p>
                         <h4>Что такое детокс? <br> Очищаем организм</h4>  
                     </div>
-                    <div class="first3">
-                        <h3>22.04.2020</h3>
+                    <div tabindex="0" class="first first3">
+                        <p>22.04.2020</p>
                         <h4>Еда, которая <br> заставляет грустить</h4>  
                     </div>
-                    <div class="first4">
-                        <h3>22.04.2020</h3>
+                    <div tabindex="0" class="first first4">
+                        <p>22.04.2020</p>
                         <h4>Готовим обеды для <br> офиса</h4>  
                     </div>
                 </div>
@@ -181,9 +238,8 @@
             </div>
         </section>
         <!-- article end -->
-
-
     </main>
+
 
 
     <!-- footer start -->
@@ -195,11 +251,38 @@
                     <h2>Расчитать стоимость обеда</h2>
                     <h3>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</h3>
                     <form action="#">
-
+                        <form>
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                          
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                          
+                            <label for="date">Дата:</label>
+                            <input type="date" id="date" name="date" required>
+                          
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          
+                          
                         <input type="button" class="btnfoot" value="Рассчитать">
                     </form>
                 </div>
+
+
+                <div class="infofoot">
+                    <div class="navigation-links">
+                        <a href="#">Главная</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Меню</a>
+                        <a href="#">Оплата</a>
+                        <a href="#">Доставка</a>
+                        <a href="#">Контакты</a>
+                        <input type="text" class="search-input" name="search" formaction="#" formmethod="post" placeholder="Поиск">
+                    </div>
+                </div>
             </div>
+            
         </section>
         <!-- feedback end -->
 
