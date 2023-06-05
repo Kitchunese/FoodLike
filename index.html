@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     <link defer rel="stylesheet" href="css/header.css">
+    <script defer src="js/annajs.js"></script>
 </head>
 <body>
     <header class="bg">
@@ -48,6 +49,73 @@
                         <a href="" class="btn">Наше меню</a>
                    </div>
                 </div>
+                <div class="wrapper">
+                    <div class="slider3">
+                        <div class="slider3__list">
+                            
+                            <div class="slider3__item">   
+                                <div class="card3">
+                                    <div class="card3_silki">
+                                        <img src="img/Icon3.svg" alt="" class="icon3">
+                                        <a href="">Мучные изделия </a>
+                                        <img src="img/strelka3.svg" alt="" class="strelka3">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slider3__item">
+                                <div class="card4">
+                                    <div class="card3_silki">
+                                        <img src="img/Icon4.svg" alt="" class="icon4">
+                                        <a href="">Горячие блюда</a>
+                                        <img src="img/strelka3.svg" alt="" class="strelka4">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slider3__item">
+                                <div class="card5">
+                                    <div class="card3_silki">
+                                        <img src="img/Icon5.svg" alt="" class="icon5">
+                                        <a href="">Закуски</a>
+                                        <img src="img/strelka3.svg" alt="" class="strelka5">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slider3__item">
+                                <div class="card2">
+                                    <div class="card3_silki">
+                                        <img src="img/Icon2.svg" alt="" class="icon2">
+                                        <a href="">Десерт</a>
+                                        <img src="img/strelka3.svg" alt="" class="strelka2">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slider3__item">
+                                <div class="card1">
+                                    <div class="card3_silki">
+                                        <img src="img/Icon1.svg" alt="" class="icon1">
+                                        <a href="">Пицца</a>
+                                        <img src="img/strelka3.svg" alt="" class="strelka1">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper">
+                            <button class="slider3__btn slider3__btn_1 slider3__btn--prev" disabled></button>
+                            <button class="slider3__btn slider3__btn_2 slider3__btn--next"></button>
+                        
+                        </div>
+                    </div>
+                </div>
+                
             </section>       
                     
     </header>
@@ -72,13 +140,14 @@
                                     <p>куриная грудка, сыр, шампиньоны, майонез</p>                              
                                     <div class="slova">
                                         <h2>280 ₽</h2>
-                                        <a href="" class="btn3">Подробнее
-                                            <img src="img/strelka.svg" alt="">
-                                        </a>
+                                        <div class="check">
+                                            <a href="" class="btn3">Подробнее</a>
+                                        <img src="img/strelka.svg" alt="" class="strela">
+                                        </div>
                                     </div>
                                     <div class="slider">
-                                        <button class="btngreen"><img src="img/green.svg" alt=""></button>    
-                                        <button class="bntorange"><img src="img/orange.svg" alt=""></button>
+                                        <button class="btngreen  slider3__btn_1"></button>    
+                                        <button class="bntorange slider3__btn_2"></button>
                                     </div>
                             </div>
                         </div>                  
@@ -87,7 +156,78 @@
 
         </section>
 
-        <section class="section5 section">пять</section>
+        <section class="section5">
+            <div class="tester2">
+                <div class="container">
+                    <div class="bluda">
+                        <h2 class="menu_nazvanie">Меню</h2>
+                        <ul class="menu_bluda">
+                            <li>Первые блюда</li>
+                            <li>Вторые блюда</li>
+                            <li>Салаты</li>
+                            <li>Выпечка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu_dishes">
+                <div class="menu-dish__list">
+                    <div class="menu-dish__item">
+                        <img class="menu-dish__dish-image" src="img/ChickenInTeriyakiSauce.png" alt="">
+                        <a class="menu-dish__details">
+                            <img class="menu-dish__details-arrow" src="img/orangearrow_icon.png">
+                        </a>
+                        <div class="menu-dish__item-text">
+                            <p class="menu-font">Курица в соусе <br> терияки</p>
+                            <p class="menu-font__mini">куриная грудка,<br> сыр, шампиньоны, <br>майонез</p>
+                        </div>
+                    </div>
+                    <div class="menu-dish__item">
+                        <img class="menu-dish__dish-image" src="img/PumpkinCreamSoup.png" alt="">
+                        <a class="menu-dish__details">
+                            <img class="menu-dish__details-arrow" src="img/orangearrow_icon.png">
+                        </a>
+                        <div class="menu-dish__item-text">
+                            <p class="menu-font">Тыквенный <br> крем-суп</p>
+                            <p class="menu-font__mini">куриная грудка,<br> сыр, шампиньоны,<br> майонез</p>
+                        </div>
+                    </div>
+                    <div class="menu-dish__item">
+                        <img class="menu-dish__dish-image" src="img/SummerSalad.png" alt="">
+                        <a class="menu-dish__details">
+                            <img class="menu-dish__details-arrow" src="img/orangearrow_icon.png">
+                        </a>
+                        <div class="menu-dish__item-text">
+                            <p class="menu-font">Салат <br> летний</p>
+                            <p class="menu-font__mini">капуста красная,<br> капуста белая,<br> морковь, сметана</p>
+                        </div>
+                    </div>
+                    <div class="menu-dish__item">
+                        <img class="menu-dish__dish-image" src="img/CollSlowSalad.png" alt="">
+                        <a class="menu-dish__details">
+                            <img class="menu-dish__details-arrow" src="img/orangearrow_icon.png">
+                        </a>
+                        <div class="menu-dish__item-text">
+                            <p class="menu-font">Салат <br> Коул Слоу</p>
+                            <p class="menu-font__mini">капуста красная,<br> капуста белая, морковь,<br> соус Коул Слоу
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-switching__arrows">
+                    <a class="menu-switching__left-arrow">
+                        <img src="img/arrow1_icon.png">
+                    </a>
+                    <a class="menu-switching__right-arrow">
+                        <img src="img/arrow1_icon.png">
+
+                    </a>
+                    <a name="about-company"></a>
+                </div>
+
+            </div>
+        </section>
         <section class="section6 section">шесть</section>
         <section class="section7 section">семь</section>
 
