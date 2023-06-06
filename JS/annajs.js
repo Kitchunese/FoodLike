@@ -28,3 +28,4 @@ btnPrev.addEventListener("click", function(){
   }
   
 });
+console.log("debug")
