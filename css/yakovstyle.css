@@ -298,7 +298,7 @@
     color: #2F2F2F;
     text-decoration: none;
 }
-a:hover, a:focus{
+.textnashim a:hover, a:focus{
     filter:contrast(40%);
     text-decoration: underline;
 }
