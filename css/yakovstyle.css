@@ -1,4 +1,3 @@
-
 .container{
     max-width: 1199px;
     margin: 0 auto;
@@ -7,49 +6,205 @@
     padding-right: 15px;
 }
 
+/* общие стиливые правила для: рамок у форм, стилей текста форм и т.д. */
+
+.type-1 {
+    border-radius:5px;
+    border: 1px solid #585858;
+    transition: .3s border-color;
+}
+
+/* общие стиливые правила для: рамок у форм, стилей текста форм и т.д. */
+
+/* о компании */
+.aboutcompanie{
+    background: rgba(255, 127, 34, 0.06);
+}
+.compan{
+    display: flex;
+}
+.compani{
+    margin-top: 127px;
+    margin-bottom: 202px;
+
+}
+.compani h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121.9%;
+    color: #2F2F2F;
+    margin-bottom: 24px;
+}
+.compani p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2F2F2F;
+    margin-bottom: 42px;
+}
+.photocom img{
+    margin-top: -90px;
+}
+/* о компании */
+
+
+/* Не знаете,что лучше заказать? */
+.lapsha{
+    min-height: 596px;
+    background: url(../image/Bglapha.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FBF8F8;
+}
+.laplap{
+    background: #F8F8F8;
+    box-shadow: 0px 0px 250px rgba(0, 0, 0, 0.16);
+    border-radius: 30px 53px 53px 53px;
+    width: 585px;
+    height: 656px;
+}
+.laphaforma{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 102px;
+    padding-right: 102px;
+}
+.laphaforma input{
+    width:100%;
+    margin:1px;
+    padding:10px;
+
+}
+  .laphaforma > *:nth-child(2) {
+    margin-top: 16px;
+  }
+  
+  .laphaforma > *:nth-child(3) {
+    margin-top: 32px;
+  }
+  .laphaforma > *:nth-child(4) {
+    margin-top: 25px;
+  }
+  
+.laphaforma h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121.9%;
+    text-align: center;
+    color: #2F2F2F;
+}
+.laphaforma p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #2F2F2F;    
+}
+.laphaforma h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #2F2F2F;
+}
+.laphaforma a{
+    color: inherit;
+}
+.laphaforma label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 121.9%;
+    color: #585858;
+}
+.laphaformabtn{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 56px;
+    gap: 10px;
+    background: #FF7F22;
+    border-radius: 0px 24px 24px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 90px;
+    
+}
+.laphaformabtn:hover,
+.laphaformabtn:focus{
+    transition: 0.2s box-shadow ease-in-out,
+                0.2s background-color ease-in-out;
+    background-color: #E86100;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.484);
+}
+/* Не знаете,что лучше заказать? */ 
 
  /* как сделать заказ  */
  /* удалить */
- .zakaz{
+.zakaz{
     padding-bottom: 100px;
     padding-top: 100px;
     background-color: #FBF8F8;
- }
+}
 .card h4{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 155.4%;
-color: #2F2F2F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.4%;
+    color: #2F2F2F;
 }
 .card p{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 155.4%;
-color: #2F2F2F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155.4%;
+    color: #2F2F2F;
 }
 .card{
-background: #FFFFFF;
-box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.04);
-border-radius: 0px 33px 33px 33px;
-width: 276px;
-height: 278px;
-padding-left: 26px;
-padding-top: 42px;
-padding-right: 26px;
-padding-bottom: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 0px 33px 33px 33px;
+    width: 276px;
+    height: 278px;
+    padding-left: 26px;
+    padding-top: 42px;
+    padding-right: 26px;
+    padding-bottom: 42px;
 }
 .allzakaz h2{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 34px;
-line-height: 121.9%;
-text-align: center;
-padding-bottom: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121.9%;
+    text-align: center;
+    padding-bottom: 60px;
 }
 .howzahaz {
     display: flex;
@@ -66,57 +221,55 @@ padding-bottom: 60px;
     background-color: #EE7700;
 }
 .card:hover a {
-    display: block;
+    display: flex;
+    text-decoration: none;
+    
 }
 .card:hover h2, .card:hover p{
     color: white;
 }
-.card a {
-    text-align: left;
+.card a{
     display: none;
     color: white;
     padding: 8px;
-    margin-top: 16px;
-    text-align: center;
     text-decoration: none;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 155.4%;
     color: #FFFFFF;
+    justify-content: left;
+
 }
  /* как сделать заказ конец */
+
+
 
 
  /* <!-- блок отзывов --> */
 .otzisvs{
     background-color: #FBF8F8;
-    /* удалить */
-    padding: 300px;
 }
 .leftotziv {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  
-  .textnashim {
+}
+.textnashim {
     margin-right: 16px;
-  }
-  
-  .cardsotziv {
+    width:50%;
+}
+.cardotziv {
     display: flex;
     flex-direction: column;
-  }
-  
-  .firscard {
+}
+.firscard {
     width: 100px;
     height: 100px;
     background-color: #ccc;
     margin-right: 16px;
-  }
-  
+    margin: 16px;
+}
 .textnashim h3{
     font-family: 'Montserrat';
     font-style: normal;
@@ -165,7 +318,43 @@ a:hover, a:focus{
     line-height: 155.4%;
     color: #2F2F2F;
 }
+.firscard{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 33px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 22px 22px 22px;
+    width: 482px;
+    height: 162px;
+}
+.one{
+    display: flex;
+    justify-content: flex-end;
+}
+.imgfirstcard{
+    margin-top: 16px;
+}
+.textfirstcard{
+    margin-top: 29px;
+}
+.firscard_two{
+    display: flex;
+    flex-direction: end;
+}
+.carsotziv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.firstcard img {
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+}
  /* <!-- блок отзывов --> */
+
+
 
  /* otziv start ----------------------------------------------- */
 .otziv{
@@ -271,6 +460,8 @@ a:hover, a:focus{
 
 
 
+
+
 /* article start ----------------------------------------------------------------*/
 .articles{
     min-height: 1011px;
@@ -288,6 +479,7 @@ a:hover, a:focus{
     grid-template-rows: 355px 300px;
     grid-gap: 30px;
 }
+
 .gridaart img{
     border-radius: 10px;
 } 
@@ -327,7 +519,6 @@ a:hover, a:focus{
 .first3{
     background-image: url('/image/rasgrus.png');
     background-size: cover;
-
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end; 
@@ -344,7 +535,6 @@ a:hover, a:focus{
 .first4{
     background-image: url('/image/gotovim.png');
     background-size: cover;
-
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end; 
@@ -416,6 +606,7 @@ a:hover, a:focus{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FBF8F8;
+    min-height: 968px;
 }
 .foterbg{
     padding-top: 98px;
@@ -448,28 +639,61 @@ a:hover, a:focus{
     line-height: 155.4%;
     color: #FFFFFF;
 }
-.foterbg input{
+.foterbg label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 121.9%;
+    color: #FFFFFF;
+}
+
+.ftr1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 39px;
+}
+.ftr2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+.ftr3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 200px;
+    margin-top: 23px;
+
+
+}
+.ftr4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 200px;
+    margin-top: 23px;
+    margin-bottom: 50px;
+
+}
+
+.btnfoot{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 14px 50px;
     gap: 10px;
+    border: none;
     position: absolute;
     width: 196px;
     height: 48px;
-    border: none;
     background: #EE7700;
-    border-radius: 0px 24px 24px 24px;
-}
-.btnfoot{
-    width: 96px;
-    height: 20px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 121.9%;
     color: #FFFFFF;
+    border-radius: 0px 24px 24px 24px;
     transition: 0.3s box-shadow ease-in-out,
                 0.3s background-color ease-in-out;
 }
@@ -480,12 +704,36 @@ a:hover, a:focus{
     background-color: #E86100;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.484);
 }
-/* footer end ------------------------------------------------------------------------*/
+.infofoot{
+    backdrop-filter: blur(20px);
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.infofoot a{
+    padding-right: 65px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;  
+    text-decoration: none;
+}
+.infofoot input{
+    padding-right: 65px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+}
+
+/* --------- footer end ------------------------------------------------------------------------*/
 
 
 
 
-/* модальное окно -----------------------------------------------------*/
+/* ----------- модальное окно -----------------------------------------------------*/
 .modal {
   display: none; /* скрыть модальное окно по умолчанию */
   position: fixed; /* позиционирование по экрану */
@@ -496,7 +744,6 @@ a:hover, a:focus{
   height: 100%;
   overflow: auto; /* добавить полосы прокрутки, если содержимое окна больше экрана */
   background-color: rgba(0, 0, 0, 0.5); /* затемнить фон */
-
 }
 .modal-content {
   background-color: #fefefe; 
@@ -504,7 +751,32 @@ a:hover, a:focus{
   padding: 20px;
   border-radius: 25px;
   max-width: 572px; 
-
+}
+.modalf{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    padding-top: 10px;
+    align-items: flex-start
+}
+.modalf input{
+    padding-right: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.modalf textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.modalf label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 121.9%;
+    color: #585858;
 }
 .close {
   color: #aaa;
@@ -536,7 +808,6 @@ a:hover, a:focus{
     color: #FFFFFF;
     flex: none;
 }
-
 .review {
     width: 380px;
     height: 200px;
@@ -550,6 +821,7 @@ a:hover, a:focus{
     font-size: 14px;
     line-height: 121.9%;
     color: rgba(100, 100, 100, 0.56);
+    width: 100%;
   }
   textarea::placeholder {
     font-family: 'Montserrat';
@@ -573,8 +845,17 @@ a:hover, a:focus{
     font-size: 26px;
     line-height: 121.9%;
     display: flex;
- 
     color: #2F2F2F;
-    }
+    justify-content: start;
+    padding-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+/* ----------- модальное окно -----------------------------------------------------*/
 
-/* модальное окно -----------------------------------------------------*/
+@media (max-width: 980px) {
+    img[src="./image/Group239.png"] {
+      display: none;
+    }
+  }
+  
