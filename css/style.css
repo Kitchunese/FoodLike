@@ -248,7 +248,7 @@ main{
     /* линейный градиент №1 */
 
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 65.75%, rgb(238,119,0,1) 65.75%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70.75%, rgb(238,119,0,1) 70.75%);
 
 
     /* линейный градиент №2 */
